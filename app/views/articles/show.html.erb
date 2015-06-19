@@ -11,4 +11,4 @@
 <p>___________________________</p>
 
 
-<%= link_to 'my stories', articles_path %> | <%= link_to 'my dashboard', dashboard_path %> | <%= link_to 'home', root_path %> | <%= link_to 'edit', edit_articles_path(article) %>
+<%= link_to 'my stories', articles_path %> | <%= link_to 'my dashboard', dashboard_path %> | <%= link_to 'home', root_path %> | <%= link_to 'edit', edit_article_path(@article) %> | <%= link_to 'delete story', @article, method: :delete %>
