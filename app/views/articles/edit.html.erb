@@ -1,0 +1,8 @@
+<h2> article edit </h2> 	
+
+<%= form_for :article, url: articles_path do |f| %>
+
+	<% if @article.errors.any? %>
+		<% article.errors.full_messages.each do |error| %>
+		<% end %>
+	<% end %>
