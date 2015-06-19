@@ -7,11 +7,11 @@ Rails.application.routes.draw do
   root 'welcome#index'
 
   get '/dashboard', to: 'users#dashboard'
+  get '/login', to: 'sessions#new'
 
   resources :articles
 
-  # get '/articles(params[:article_id]', to: 'articles#new'
-
+ 
 
  
 end

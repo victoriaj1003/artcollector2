@@ -1,8 +1,5 @@
-<h2> article edit </h2> 	
+<h2> edit story </h2> 	
 
-<%= form_for :article, url: articles_path do |f| %>
+<%= render 'form' %>
 
-	<% if @article.errors.any? %>
-		<% article.errors.full_messages.each do |error| %>
-		<% end %>
-	<% end %>
+<%= link_to 'my dashboard', dashboard_path %> | <%= link_to 'my stories', articles_path %> | <%= link_to 'home', root_path %> | <%= link_to 'delete story', @article, method: :delete %>
