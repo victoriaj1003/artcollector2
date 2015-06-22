@@ -1,3 +1,14 @@
+<div class="navbar"> 
+	<nav>
+	<h1> story teller </h1>
+
+<h3><%= @article.title %> </h3>
+
+	<%= link_to 'my stories', articles_path %>  <%= link_to 'my dashboard', dashboard_path %>  <%= link_to 'home', root_path %>  <%= link_to 'edit story', edit_article_path(@article) %>  <%= link_to 'delete story', @article, method: :delete %>
+
+	</nav>
+</div>
+
 <p> title: 
 <%= @article.title %>
 </p>
@@ -11,4 +22,3 @@
 <p>___________________________</p>
 
 
-<%= link_to 'my stories', articles_path %> | <%= link_to 'my dashboard', dashboard_path %> | <%= link_to 'home', root_path %> | <%= link_to 'edit', edit_article_path(@article) %> | <%= link_to 'delete story', @article, method: :delete %>
