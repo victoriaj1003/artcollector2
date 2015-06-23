@@ -14,6 +14,7 @@ class UsersController < ApplicationController
 
 	def edit
 		@user = current_user
+		@nav_subtitle = current_user.username
 	end
 
 	def show
