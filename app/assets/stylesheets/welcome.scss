@@ -56,7 +56,7 @@ body {
 		@include span-columns(4);
 		border-left: 1px solid #001021;
 		.api_column_images {
-			@include span-columns(1);
+			@include span-columns(6);
 		}
 	}
 }
