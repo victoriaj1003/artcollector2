@@ -6,6 +6,7 @@ class ArticlesController < ApplicationController
 
 	def show
 		@article = Article.find(params[:id])
+		@nav_subtitle = Article.find(params[:id]).title
 	end
 
 	def new
@@ -14,6 +15,7 @@ class ArticlesController < ApplicationController
 
 	def edit
 		@article = Article.find(params[:id])
+		@nav_subtitle = Article.find(params[:id]).title
 	end
 
 	def create

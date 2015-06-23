@@ -1,57 +1,62 @@
-// Place all the styles related to the welcome controller here.
+	// Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 // 
 body {
+	font-family: Raleway, sans-serif;
 	@include outer-container(100%);
 	background-image: url('fabricbackground.png');
-}
-// .wholething {
-// 	@include outer-container(100%);
-// }
 
-.navbar {
-	@include span-columns(12);
-	font-family: Raleway, sans-serif;
-	color: #DADFF7;
-	// background-image: url('bindingdark.png');
-	background-color: #001021;
-	a {text-decoration: none;
+	.navbar {   
+		@include span-columns(12);
+		font-family: Raleway, sans-serif;
 		color: #DADFF7;
-		.title {
-			@include span-columns(4);
+		// background-image: url('bindingdark.png');
+		background-color: #001021;
+		.logo {
+			@include span-columns(10);
+			margin: 5px;
+		}
+			.title {
+				@include span-columns(6);
+				margin-left: 5px;
+			}
+				.navform {
+					font-family: Raleway, sans-serif;
+					@include span-columns(12);
+					margin-left: 5px;
+
+					// nav a {
+					// 	text-decoration: none;
+					// 	color: #DADFF7;
+					// 	padding-right: 5px;
+					// 	// @include span-columns(12);
+					// }
+				}
+	}
+
+	nav a {
+		text-decoration: none;
+		color: #DADFF7;
+		padding-right: 5px;
+	}
+
+	.editinglinks {
+		font-family: Raleway, sans-serif;
+		text-decoration: none;
+		color: #DADFF7;
+		padding-right: 5px;
+	}
+
+	.form {
+		@include span-columns(8);
+	}
+
+	.api_column {
+		@include span-columns(4);
+		border-left: 1px solid #001021;
+		.api_column_images {
+			@include span-columns(1);
 		}
 	}
 }
-
-
-
-
-
-// body {
-// 	background-image: #E7ECEF;
-// 	margin: 0px;
-
-// 	h1 {
-// 		font-family: Raleway, sans-serif;
-// 		color: #DADFF7;
-
-// 		nav {
-// 			background-color: #413C58;
-// 			// border-bottom: 2px #8E0045 solid;
-// 			width: 100%;
-// 			height: 75px;
-// 			margin-top: 0px;
-// 			position: 0, 0;
-
-// 			a {
-// 				text-decoration: none;
-// 				font-size: 25px;
-// 				color: #8E0045;
-
-			
-// 			}
-// 		}
-// 	}
-// }
-

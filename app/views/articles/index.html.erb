@@ -1,14 +1,4 @@
-<div class="navbar"> 
-	<nav>
 
-<h1> story teller </h1>
-
-<h3> stories </h3>
-
-<%= link_to "new story", new_article_path %>  <%= link_to 'my dashboard', dashboard_path %>  <%= link_to 'home', root_path %> 
-
-	</nav>
-</div>
 
 
 <p>___________________________</p>
@@ -19,13 +9,12 @@
 	
 	<p><%= link_to article.title, article %></p>
 	<p><%= article.body %></p>
-	<p><%= link_to 'edit story', edit_article_path(article) %></p>
-	<p><%= link_to 'delete story', article_path(article), method: :delete %></p>
+	
+	<p class="editinglinks"><%= 
+	 link_to 'edit story', edit_article_path(article) %> | <%= link_to 'delete story', article_path(article), method: :delete %> </p>
 
 
 	<p>___________________________</p>
 
 	<% end %>
-	<br>
-	<br>
-
+	
