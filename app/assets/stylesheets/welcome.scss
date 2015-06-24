@@ -48,15 +48,31 @@ body {
 		padding-right: 5px;
 	}
 
-	.form {
-		@include span-columns(8);
+	.articles{
+
+		margin-left: 10px;
+	}
+		.form {
+			@include span-columns(8);
+			font-family: Raleway, sans-serif;
+			text-color: #001021;
+		}
+
+		.api_column {
+			@include span-columns(4);
+			border-left: 1px solid #001021;
+			text-color: #001021;
+			.api_column_images {
+				margin: 10px;
+				@include span-columns(2 of 4);
+
+			}
+
 	}
 
-	.api_column {
-		@include span-columns(4);
-		border-left: 1px solid #001021;
-		.api_column_images {
-			@include span-columns(6);
-		}
-	}
+}
+
+.errormessageslist {
+	text-decoration: none;
+	font-family: Raleway, sans-serif;
 }
