@@ -76,3 +76,14 @@ body {
 	text-decoration: none;
 	font-family: Raleway, sans-serif;
 }
+
+.cycle-slideshow {
+	display: block;
+	@include span-columns(7 of 12);
+	margin-left: 30%;
+	.cycle-slideshow img {
+		width: 100%; 
+		height: auto;
+	}
+
+}
