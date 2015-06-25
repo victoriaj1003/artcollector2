@@ -10,7 +10,7 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- 
+ *= require jquery-ui
  *= require_self
  */
 
@@ -19,7 +19,13 @@
 @import 'users';
 @import 'welcome';
 @import 'articles';
+@import 'jquery-ui';
 
+textarea {
+	padding: 1em;
+	width: 650px;
+	min-height: 200px;
+}
 
 
 
