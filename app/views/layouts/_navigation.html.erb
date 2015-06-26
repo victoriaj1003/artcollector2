@@ -1,9 +1,11 @@
 <div class="navbar"> 
 	<nav>
 
-	<h1 class="logo"> story teller </h1>
+	<h1 class="logo"> art collector </h1>
 
 	<%#= @nav_subtitle %>
+
+	<div class="navlinks">
 
 	<% view = controller.action_name %>
 	<% if view != "dashboard" %>
@@ -25,6 +27,8 @@
 	<% if view != "welcome#index" %>
 		<%= link_to 'home', root_path %>
 	<% end %>
+
+	</div>
 
 
 	

@@ -11,11 +11,17 @@ body {
 		@include span-columns(12);
 		font-family: Raleway, sans-serif;
 		color: #DADFF7;
+		// height: 55px;
 		// background-image: url('bindingdark.png');
 		background-color: #001021;
 		.logo {
 			@include span-columns(10);
 			margin: 5px;
+		}
+
+		.navlinks {
+			@include span-columns(1);
+			position: right;
 		}
 			.title {
 				@include span-columns(6);
@@ -41,15 +47,25 @@ body {
 		padding-right: 5px;
 	}
 
+	.pagetitle {
+		margin-top: 5px;
+		margin-left: 5px;
+	}
+
 	.editinglinks {
+		// @include span-columns(8);
 		font-family: Raleway, sans-serif;
 		text-decoration: none;
 		color: #DADFF7;
 		padding-right: 5px;
 	}
 
-	.articles{
+	.editstory {
+		@include span-columns(8);
+	}
 
+	.articles{
+		@include span-columns(8);
 		margin-left: 10px;
 	}
 		.form {
@@ -78,6 +94,7 @@ body {
 }
 
 .cycle-slideshow {
+	margin-top: 100px;
 	display: block;
 	@include span-columns(7 of 12);
 	margin-left: 30%;

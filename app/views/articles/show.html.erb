@@ -1,14 +1,18 @@
 <div class="articles">
-<p> title: 
+<p>  
 <%= @article.title %>
 </p>
 
 <p>___________________________</p>
 
-<p> body:
-<%= @article.body %></p>
+<p> 
+<%= content_html @article.body %></p>
 
 
 	 <p>___________________________</p>
 
 </div>
+
+
+
+<%= render 'modal' %>

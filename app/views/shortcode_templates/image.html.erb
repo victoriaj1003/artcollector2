@@ -1,0 +1,19 @@
+<% @image = Artwork.find(@attributes[:id]) %>
+<hr>
+<div><%= @image.title %></div>
+<div><%= image_tag @image.avatar.url(:medium) %></div>
+<label for="modal-<%= @image.id %>">
+    <div class="modal-trigger">click for large view</div>
+</label>
+<hr>
+<div class="modal">
+  <input class="modal-state" id="modal-<%= @image.id %>" type="checkbox" />
+  <div class="modal-fade-screen">
+    <div class="modal-inner">
+      <div class="modal-close" for="modal-<%= @image.id %>"></div>
+      <h1><%= @image.title %></h1>
+      <p class="modal-intro">***** pull in intro for image ***** </p>
+      <p class="modal-content"><%= image_tag @image.avatar.url(:medium) %></p>
+    </div>
+  </div>
+</div>
