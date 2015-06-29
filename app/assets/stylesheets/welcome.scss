@@ -11,7 +11,9 @@ body {
 		@include span-columns(12);
 		font-family: Raleway, sans-serif;
 		color: #DADFF7;
-		// height: 55px;
+		height: 100px;
+		padding-top: 10px;
+		margin-bottom: 10px;
 		// background-image: url('bindingdark.png');
 		background-color: #001021;
 		.logo {
@@ -36,7 +38,6 @@ body {
 					// 	text-decoration: none;
 					// 	color: #DADFF7;
 					// 	padding-right: 5px;
-					// 	// @include span-columns(12);
 					// }
 				}
 	}
@@ -47,17 +48,43 @@ body {
 		padding-right: 5px;
 	}
 
+	.welcomeheadline {
+	margin-left: 5px;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	font-style: italic;
+	}
+
 	.pagetitle {
 		margin-top: 5px;
 		margin-left: 5px;
 	}
 
-	.editinglinks {
+	a {
+		color:#001021;
+		text-decoration: none;
+	}
+
+
+	p.editinglinks {
 		// @include span-columns(8);
 		font-family: Raleway, sans-serif;
 		text-decoration: none;
 		color: #DADFF7;
 		padding-right: 5px;
+	}
+
+	.articles a {
+		font-size: 1.5em;
+	}
+		p.editinglinks {
+			font-size: 0.75em;
+		}
+
+
+	.articles a:hover {
+		font-style: italic;
+
 	}
 
 	.editstory {
@@ -67,6 +94,7 @@ body {
 	.articles{
 		@include span-columns(8);
 		margin-left: 10px;
+
 	}
 		.form {
 			@include span-columns(8);
@@ -78,6 +106,7 @@ body {
 			@include span-columns(4);
 			border-left: 1px solid #001021;
 			text-color: #001021;
+
 			.api_column_images {
 				margin: 10px;
 				@include span-columns(2 of 4);
@@ -104,3 +133,12 @@ body {
 	}
 
 }
+
+
+// .modal-inner {
+// 	height: 100%;
+// }
+
+// .modal-content {
+// 	height: auto;
+// }

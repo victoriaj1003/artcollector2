@@ -23,9 +23,24 @@
 
 textarea {
 	padding: 1em;
-	width: 650px;
-	min-height: 200px;
+	// width: 650px;
+	// min-height: 200px;
+	// min-height: 500px;
+	// width: 800px;
 }
+
+#article_title {
+	background-image: url('fabricbackground.png');
+	width: 600px;
+}
+
+#article_body {
+	background-image: url('fabricbackground.png');
+	min-height: 500px;
+	width: 800px;
+}
+
+
 
 
 
