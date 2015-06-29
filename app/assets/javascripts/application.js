@@ -15,14 +15,14 @@
 //= require jquery-ui
 //= require_tree .
 
-$(document).on('page:change', function() {
-	$( "#article_body" ).droppable({
-	  accept: ".api_column_images"
-	});
-	$( ".api_column_images" ).draggable({
-		containment: "#article_body"
-	});
-});
+// $(document).on('page:change', function() {
+// 	$( "#article_body" ).droppable({
+// 	  accept: ".api_column_images"
+// 	});
+// 	$( ".api_column_images" ).draggable({
+// 		containment: "#article_body"
+// 	});
+// });
 
 
 
