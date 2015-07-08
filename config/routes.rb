@@ -11,6 +11,7 @@ Rails.application.routes.draw do
 
   resources :articles
   resources :artworks
+  resources :users
 
   # get '/artworks'
 
