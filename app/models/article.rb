@@ -3,6 +3,6 @@ class Article < ActiveRecord::Base
 		length: { minimum: 5 }
 
 	has_many :artworks 
-	# dependent: :destroy
+	belongs_to :user
 
 end

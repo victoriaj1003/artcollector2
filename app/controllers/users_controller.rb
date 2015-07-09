@@ -4,6 +4,9 @@ class UsersController < ApplicationController
 	def close
 	end
 
+	def index
+	end
+
 	def password
 		@user = current_user
 	end
@@ -24,8 +27,8 @@ class UsersController < ApplicationController
 	def create
 			@user = User.new(user_params)
 		if @user.save
-			session[:user_id] = @user.user_id
-			redirect_to username_path(@user.username), notice: "new account created"
+			session[:user_id] = @user.id
+			redirect_to dashboard_path(@user.username), notice: "new account created"
 		else
 			render :new
 		end
