@@ -11,7 +11,7 @@
 	<p><%= article.body %></p>
 	
 	<p class="editinglinks"><%= 
-	 link_to 'edit story', edit_article_path(article) %> | <%= link_to 'delete story', article_path(article), method: :delete %> </p>
+	 link_to 'edit story', edit_article_path(article) %> | <%= link_to 'delete story', article_path(article), method: :delete, data: { confirm: 'are you sure?'} %> </p>
 
 
 	<p>___________________________</p>
