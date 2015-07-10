@@ -14,13 +14,8 @@
 				      <a href="javascript:void(0)" class="hover-menu-item">
 				      <% view = controller_name + "#" + action_name %>
 
-				      		<% if view == 'welcome#index' %>
-									<%= link_to 'sign in', login_path %>
-									<% end %>
+				      <% if current_user %>
 
-									<% if view == 'welcome#index' %>
-									<%= link_to 'sign up', new_user_path %>
-									<% end %>
 
 									<% if view != "users#dashboard" %>
 										<%= link_to 'dashboard', dashboard_path %>
@@ -30,18 +25,29 @@
 										<%= link_to 'my stories', articles_path %>
 									<% end %>
 
-
 									<% if view != 'articles#new' %>
 										<%= link_to 'new story', new_article_path %> 
 									<% end %>
 
 									<% if view != "welcome#index" %>
-										<%= link_to 'home',root_path %>
+										<%= link_to 'home', root_path %>
 									<% end %>
 
 									<% if current_user %>
-										<%= link_to 'sign out', logout_path %>
+										<%= link_to 'sign out', logout_path, method: :delete %>
 									<% end %>
+
+								<% else %>
+
+									<% if view == 'welcome#index' %>
+									<%= link_to 'sign in', login_path %>
+									<% end %>
+
+									<% if view == 'welcome#index' %>
+									<%= link_to 'sign up', new_user_path %>
+									<% end %>
+								<% end %>
+
 
 							</a>
 				  <!--     <ul class="submenu">
