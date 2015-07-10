@@ -1,37 +1,56 @@
 <div class="navbar"> 
 	<nav>
 
-	<h1 class="logo"> art collector </h1>
+		<h1 class="logo"> art collector </h1>
 
-	<%#= @nav_subtitle %>
+		<%#= @nav_subtitle %>
 
-	<div class="navlinks">
+		<div class="navlinks">
 
-	<% view = controller.action_name %>
-	<% if view != "dashboard" %>
-		<%= link_to 'dashboard', dashboard_path %>
-	<% end %>
+				<li class="nav-link hover-menu">
+				  <a href="javascript:void(0)">More</a>
+				  <ul class="submenu">
+				    <li class="hover-menu">
+				      <a href="javascript:void(0)" class="hover-menu-item">
+				      <% view = controller_name + "#" + action_name %>
 
-	<% if view != "index" %>
-		<%= link_to 'my stories', articles_path %>
-	<% end %>
+				      		<% if view == 'welcome#index' %>
+									<%= link_to 'sign in', login_path %>
+									<% end %>
 
-	<% if view != "edit" %>
-		<%#= link_to 'edit story', edit_article_path %>
-	<% end %>
+									<% if view == 'welcome#index' %>
+									<%= link_to 'sign up', new_user_path %>
+									<% end %>
 
-	<% if view != "new" %>
-		<%= link_to 'new story', new_article_path %> 
-	<% end %>
+									<% if view != "users#dashboard" %>
+										<%= link_to 'dashboard', dashboard_path %>
+									<% end %>
 
-	<% if view != "welcome#index" %>
-		<%= link_to 'home', root_path %>
-	<% end %>
-
-	</div>
+									<% if view != 'articles#index' %>
+										<%= link_to 'my stories', articles_path %>
+									<% end %>
 
 
-	
+									<% if view != 'articles#new' %>
+										<%= link_to 'new story', new_article_path %> 
+									<% end %>
 
+									<% if view != "welcome#index" %>
+										<%= link_to 'home',root_path %>
+									<% end %>
+
+									<% if current_user %>
+										<%= link_to 'sign out', logout_path %>
+									<% end %>
+
+							</a>
+				  <!--     <ul class="submenu">
+				        <li><a href="javascript:void(0)">Submenu Item</a></li>
+				        <li><a href="javascript:void(0)">Another Item</a></li>
+				      </ul> -->
+						</li>
+			  	</ul>
+				</li>
+		</div>
 	</nav>
 </div>
