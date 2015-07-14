@@ -7,4 +7,10 @@ $( document ).ready(function() {
 	    var newText = textbox + "[image id=\"" + imageID + "\"]";
 	    document.getElementById("article_body").value = newText;
 	});
+
+	// on click of create article button, loop through each of the user selected images and save each to db when article is saved using an AJAX function
+
+	
+
+
 });

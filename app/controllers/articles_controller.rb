@@ -5,12 +5,14 @@ class ArticlesController < ApplicationController
 	end
 
 	def show
+		@art = RijksmuseumClient.art
 		@article = Article.find(params[:id])
 		@nav_subtitle = Article.find(params[:id]).title
 	end
 
 	def new
 		@article = Article.new
+		@art = RijksmuseumClient.art
 	end
 
 	def edit
@@ -20,7 +22,7 @@ class ArticlesController < ApplicationController
 
 	def create
 		@article = Article.new(article_params)
-
+		@art = RijksmuseumClient.art
 		if @article.save
 			redirect_to @article
 		else

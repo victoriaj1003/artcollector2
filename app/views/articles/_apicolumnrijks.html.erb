@@ -1,0 +1,37 @@
+<div class="api_column">
+
+<% @art["artObjects"].each do |work| %>
+
+	
+		
+		 <%= image_tag work["webImage"]["url"][0...-1].concat("128"), class: "api_column_images", title: work["longTitle"], id: work["id"] %>
+		
+	<br>
+
+	
+<% end %>
+
+
+
+</div>
+
+
+
+
+
+<!-- <div class="api_column"> -->
+ <%#i = 111 %>
+<%# @art["artObjects"].each do |work| %>
+
+	
+		
+		 <%#= image_tag work["webImage"]["url"][0...-1].concat("128"), class: "api_column_images", id: "#{i}" %>
+		
+	<!-- <br> -->
+
+	<%# i+= 1 %>
+<%# end %>
+
+
+
+<!-- </div> -->

@@ -1,10 +1,10 @@
 class ArtworksController < ApplicationController
   def index
-    @artwork = Artwork.all
+    @artwork = RijksmuseumClient.art
   end
 
   def show
-    @artwork = Artwork.find(params[:id])
+    @artwork = Artwork.find(params[:rijks_id])
   end
 
   def new

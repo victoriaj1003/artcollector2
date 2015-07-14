@@ -8,7 +8,7 @@ Rails.application.routes.draw do
 
   get '/dashboard', to: 'users#dashboard'
   get '/login', to: 'sessions#new'
-
+  get '/test', to: 'welcome#test'
   resources :articles
   resources :artworks
   resources :users
