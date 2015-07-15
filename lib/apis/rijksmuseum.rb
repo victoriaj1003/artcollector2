@@ -22,13 +22,13 @@ module Rijksmuseum
 		# 	@image_
 
 		def initialize
-			@uri_collection = URI("https://www.rijksmuseum.nl/api/nl/collection?key=V5iaRD9k&format=json&type=schilderij&ps&f.normalized32Colors.hex=%20%23367614")
+			@uri_collection = URI("https://www.rijksmuseum.nl/api/nl/collection?key=fakekey&format=json&type=schilderij&ps&f.normalized32Colors.hex=%20%23367614")
 			@parsed = JSON.parse(Net::HTTP.get(@uri_collection))
 			@art = @parsed["artObjects"]
 		end
 
 		def art
-			uri_collection = URI("https://www.rijksmuseum.nl/api/nl/collection?key=V5iaRD9k&format=json&type=schilderij&ps&f.normalized32Colors.hex=%20%23367614")
+			uri_collection = URI("https://www.rijksmuseum.nl/api/nl/collection?key=fakekey&format=json&type=schilderij&ps&f.normalized32Colors.hex=%20%23367614")
 			parsed = JSON.parse(Net::HTTP.get(uri_collection))
 			# @art = @parsed["artObjects"]
 		end
