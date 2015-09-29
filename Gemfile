@@ -60,5 +60,7 @@ end
 
 group :production do
 	gem 'pg'
+	# This gem modifies the way Rails works to suit Heroku, for example Logging is updated and the configuration for static assets (your images, stylesheets and javascript files) is tweaked to work properly within Heroku’s systems.
+	gem 'rails_12factor'
 end
 
