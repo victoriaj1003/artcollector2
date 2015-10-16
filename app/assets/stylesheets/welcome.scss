@@ -195,7 +195,7 @@ body {
 .cycle-slideshow {
 	margin-top: 100px;
 	display: block;
-	@include span-columns(6 of 12);
+	@include span-columns(8 of 12);
 	margin-left: 25%;
 	.cycle-slideshow img {
 		width: 100%; 
